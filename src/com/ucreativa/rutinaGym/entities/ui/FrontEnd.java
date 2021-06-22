@@ -64,7 +64,22 @@ public class FrontEnd extends JFrame {
             group.add(txtUpperBody);
             group.add(txtLowerBody);
             txtUpperBody.setSelected(true);
-        
+
+            if(txtUpperBody.isSelected()){
+                lblCore.setVisible(false);
+                txtCore.setVisible(false);
+                lblPiernas.setVisible(false);
+                txtPiernas.setVisible(false);
+                lblCardio.setVisible(false);
+                txtCardio.setVisible(false);
+            } else {
+                lblCore.setVisible(true);
+                txtCore.setVisible(true);
+                lblPiernas.setVisible(true);
+                txtPiernas.setVisible(true);
+                lblCardio.setVisible(true);
+                txtCardio.setVisible(true);
+            }
 
 
         txtUpperBody.addActionListener(new AbstractAction() {

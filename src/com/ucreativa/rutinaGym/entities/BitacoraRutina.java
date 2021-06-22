@@ -13,8 +13,6 @@ public class BitacoraRutina {
         this.UpperBody = UpperBody;
         this.LowerBody = LowerBody;
     }
-//
-    public String lWorkOut = " Today you work out Lower body ";
 
     public Persona getPersona() {
         return persona;

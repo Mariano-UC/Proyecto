@@ -16,7 +16,8 @@ public class FileRepository implements Repository{
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss" );
 
 
-        String text = persona.getName() + " " + lowerBody + upperBody + " " + format.format(fecha) + "\n";
+
+        String text = persona.getName() + " hoy entrenaste  " + " " + format.format(fecha) + "\n";
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH,true));
             writer.append(text);
